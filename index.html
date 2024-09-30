@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Visual Resume Builder</h1>
+        <nav>
+            <button id="loginBtn">Login</button>
+            <button id="registerBtn">Register</button>
+            <button id="logoutBtn" style="display: none;">Logout</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="authSection">
+            <div id="loginForm" style="display: none;">
+                <h2>Login</h2>
+                <form id="loginFormElement">
+                    <input type="email" id="loginEmail" placeholder="Email" required>
+                    <input type="password" id="loginPassword" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <div id="registerForm" style="display: none;">
+                <h2>Register</h2>
+                <form id="registerFormElement">
+                    <input type="email" id="registerEmail" placeholder="Email" required>
+                    <input type="password" idśśregisterPassword" placeholder="Password" required>
+                    <button type="submit">Regiśśster</button>
+                </forśśm>śśśśśś
+            </śśdiśś>śśś
+        </section>
+
+        <section id="resumeBuilder" style="display: none;">
+            <div id="templateGallery">
+                <h2>Choose a Template</h2>
+                <div id="templateList"> <a href="main.html">Professional śśś</a></div>
+            </div>
+            <div id="resumeEditor">
+                <h2>Resume Editor</h2>
+                <form id="resumeForm">
+                    <fieldset>
+                        <legend>Personal Details</legend>
+                        <input type="text" id="name" placeholder="Full Name" required>
+                        <input type="email" id="email" placeholder="Email" required>
+                        <input type="tel" id="phone" placeholder="Phone Number">
+                        <textarea id="summary" placeholder="Professional Summary"></textarea>
+                    </fieldset>
+                    <fieldset id="educationSection">
+                        <legend>Education</legend>
+                        <button type="button" id="addEducation">Add Education</button>
+                    </fieldset>
+                    <fieldset id="experienceSection">
+                        <legend>Work Experience</legend>
+                        <button type="button" id="addExperience">Add Experience</button>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Skills</legend>
+                        <input type="text" id="skills" placeholder="Skills (comma-separated)">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                        <textarea id="additional" placeholder="Certifications, Hobbies, etc."></textarea>
+                    </fieldset>
+                </form>
+            </div>
+            <div id="customizationPanel">
+                <h2>Customization</h2>
+                <label for="fontType">Font Type:</label>
+                <select id="fontType"></select>
+                <label for="fontSize">Font Size:</label>
+                <input type="range" id="fontSize" min="8" max="24" value="12">
+                <label for="fontColor">Font Color:</label>
+                <input type="color" id="fontColor">
+                <label for="colorScheme">Color Scheme:</label>
+                <select id="colorScheme"></select>
+            </div>
+        </section>
+
+        <section id="resumePreview" style="display: none;">
+            <h2>Resume Preview</h2>
+            <div id="previewContent"></div>
+            <button id="downloadPDF">Download PDF</button>
+            <button id="downloadDOCX">Download DOCX</button>
+            <button id="printResume">Print Resume</button>
+        </section>
+
+        <section id="helpSupport">
+            <h2>Help & Support</h2>
+            <button id="showFAQ">FAQ</button>
+            <button id="showContactForm">Contact Us</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Visual Resume Builder</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
