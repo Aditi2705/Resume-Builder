@@ -2,7 +2,7 @@
 
 #login
 Enter username and password.
-![image](https://github.com/user-attachments/assets/c245690d-e8e0-4b2d-a698-ddf64c2e29f8)
+![image](https://github.com/user-attachments/assets/6d265cfa-4719-41d2-be0a-5416defba83f)
 
 The website provides three different resume templates.
 User may fill the required data and he will get the resume.
